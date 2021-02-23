@@ -77,5 +77,4 @@ activity_summary <- subset_activity %>%
         group_by(subject_id, activity_id) %>%
         summarize_each(funs = mean)
 
-write.table(activity_summary, "tidy_data.txt",
-                         row.names = FALSE, quote = FALSE)
+write.table(activity_summary, "tidy_data.txt", row.names = FALSE, quote = FALSE)
